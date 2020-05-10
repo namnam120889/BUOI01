@@ -20,6 +20,10 @@ namespace BUOI01.Controllers
         }
 
        
+         public IActionResult Tudien()
+        {
+            return View();
+        }
 
         public IActionResult Index()
         {

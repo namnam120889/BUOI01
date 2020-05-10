@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Tudien";
+}
+
+<h1>Tudien</h1>
+@{ 
+    Dictionary<string, double> mang = new Dictionary<string, double>();
+    mang.Add("Nam", 9.99);
+    mang.Add("Manh", 8.8);
+    mang["Nam"] = 8.88;
+
+}
+@foreach (string key in mang.Keys)
+{
+    <div>@key =>> @mang[key] </div>
+}
+
